@@ -1,0 +1,498 @@
+# Znaci u verziji keyLayouta za MacOS sa PC tastaturom:
+# Tipku na PC tastaturi koju zovemo Cmd ali na kojoj je ugravirano Alt - u ovom layout fileu oznacavati sa Ctrl
+# Tipku na PC tastaturi koju zovemo Ctrl i na kojoj je ugravirano Ctrl - u ovom layout fileu oznacavati sa Meta
+# Mato I. 3.11.2023.
+
+# Ne znam kako rijesit da A i G funkcioniraju za skakanje od reza do reza u Timelineu
+# i istovremeno za skakanje na pocetak i kraj clipa u Source-u
+# pa sugeriram da se za prematanje u Sourceu koristi malo duze J i ; ili Home End
+
+		
+#------------------------------------------------------------------------------		
+# Resolve File Edit View Mark Playback Color Nodes Help		
+#------------------------------------------------------------------------------		
+		
+# Resolve		
+resolveAbout	:=	
+resolvePreferences	:=	
+resolveCustomizedActions	:=	
+resolveQuit	:=	Ctrl+Q
+		
+# File		
+fileNewProject	:=	
+fileNewFolder	:=	
+fileNewTimeline	:=	
+fileSaveProject	:=	Ctrl+S
+fileSaveProjectAs	:=	
+fileExportXml	:=	
+fileImportProject	:=	
+fileImportMedia	:=	
+fileImportXml	:=	
+fileImportBatchListFromEDL	:=	
+fileExportProject	:=	
+fileProjectManager	:=	
+fileProjectSettings	:=	
+		
+# Edit		
+editUndo	:=	Ctrl+Z
+editRedo	:=	Ctrl+Shift+Z
+editCut	:=	Ctrl+X
+editCopy	:=	Ctrl+C
+editRippleCut	:=	Ctrl+Shift+X
+editPaste	:=	Ctrl+V
+editPasteInsert	:=	Ctrl+Shift+V
+editPasteAttributes	:=	
+editPasteValue	:=	
+editSelectAll	:=	Ctrl+A
+editDeselectAll	:=	Space
+editSelectSubNext	:=	Shift+L
+editSelectSubPrevious	:=	Shift+J
+editSelectSubAbove	:=	Shift+I
+editSelectSubBelow	:=	Shift+K
+# "Del" = "Delete". this key does not exist on compact Mac keyboards,		
+# so provide Shift+Backspace as an equivalent Ctrlernative. Ctrlhough both		
+# keys will trigger the shortcut, the menu only shows the first one.		
+# because Del lacks a menu representation, put it last.)		
+editDelete	:=	Shift+Backspace | Del
+editBackspace	:=	Backspace
+editInsertOverwriteActionInsert	:=	Shift+Z
+editInsertOverwriteActionOverwrite	:=	Shift+X
+editInsertOverwriteActionReplace	:=	Shift+Ctrl+C
+editInsertOverwriteActionPlaceOnTop	:=	Meta+Shift+X
+editInsertOverwriteActionRippleOverwrite	:=	Shift+C
+editInsertOverwriteActionFitToFill	:=	
+editInsertOverwriteActionAppendAtEnd	:=	Shift+V
+editMulticamPrevAngle	:=	
+editMulticamNextAngle	:=	
+editMulticamPrevPage	:=	
+editMulticamNextPage	:=	
+editMulticamTgtAudioAndVideo	:=	
+editMulticamTgtVideo	:=	
+editMulticamTgtAudio	:=	
+editNudgeSwapEditForward	:=	Meta+L
+editNudgeSwapEditReverse	:=	Meta+J
+editRevivalUndo	:=	
+editRevivalRedo	:=	
+editMediaStereoModeToLeft	:=	
+editMediaStereoModeToRight	:=	
+editMediaStereoModeToBoth	:=	
+editMoveClipsUp	:=	Ctrl+Up | Meta+I
+editMoveClipsDown	:=	Ctrl+Down | Meta+K
+editSwitchToTimelineAfterEdit	:=	
+		
+# Trim		
+editSelectItemAtPlayhead	:=	Q
+editPointer	:=	M
+editRangeSelection	:=	
+editTrim	:=	,
+editSelectEditPoint	:=	
+trimSelectVideoEditPoint	:=	Shift+N
+trimSelectAudioEditPoint	:=	Shift+Space
+editToggleEditPointType	:=	Shift+M
+editToggleVideoAudioSelection	:=	Shift+,
+editNudgeTrimStepNudgeForward	:=	Meta+.
+editNudgeTrimStepNudgeReverse	:=	Meta+,
+editNudgeTrimStepTrimMultiFrameLeft	:=	Meta+M
+editNudgeTrimStepTrimMultiFrameRight	:=	Meta+/
+editSlipAudioOneFrameForward	:=	
+editSlipAudioOneFrameReverse	:=	
+editSlipAudioOneSubFrameForward	:=	
+editSlipAudioOneSubFrameReverse	:=	
+editSlipEyeOppositeEyeOneFrameForward	:=	
+editSlipEyeOppositeEyeOneFrameReverse	:=	
+editNudgeTrimStepTrimStart	:=	Meta+E
+editNudgeTrimStepTrimEnd	:=	Meta+R
+editNudgeTrimStepExtendEdit	:=	Meta+T
+editToggleDynamicTrimMode	:=	
+editDynamicTrimStop	:=	
+trimRippleStartToPlayhead	:=	
+trimRippleEndToPlayhead	:=	
+trimToggleSlideMode	:=	.
+editBlade	:=	
+trimFadeInToPlayhead	:=	Ctrl+Shift+E
+trimFadeOutToPlayhead	:=	Ctrl+Shift+R
+		
+# Timeline		
+editM2SplitClip	:=	
+editM2JoinClip	:=	
+editBladeRazor	:=	Meta+U
+editSelectClipsSelectTrackBefore	:=	
+editSelectClipsSelectAllBefore	:=	Shift+H
+editSelectClipsSelectTrackAfter	:=	
+editSelectClipsSelectAllAfter	:=	Shift+;
+timelineSelectionFollowsTimeline	:=	
+editSnapping	:=	
+editScrubAudio	:=	
+editLinkedSelection	:=	/
+#timelineLinkedSelectionInvert	:=	Ctrl
+# Ctrl+Shift and Ctrl-Shift seem to have some OS conflicts		
+# DESTINATION SELECTION		
+editTrackDestinationSelectionTargetV	:=	Meta+Shift+U
+editTrackDestinationSelectionTargetV2	:=	Meta+Shift+I
+editTrackDestinationSelectionTargetV3	:=	Meta+Shift+O
+editTrackDestinationSelectionTargetV4	:=	Meta+Shift+P
+editTrackDestinationSelectionTargetV5	:=	
+editTrackDestinationSelectionTargetV6	:=	
+editTrackDestinationSelectionTargetV7	:=	
+editTrackDestinationSelectionTargetV8	:=	
+# NAZALOST OVO SLIJEDECE NE RADI, PA PUSTAM PRAZNO:		
+editTrackDestinationSelectionTargetA	:=	Meta+Shift+J
+editTrackDestinationSelectionTargetA2	:=	Meta+Shift+K
+editTrackDestinationSelectionTargetA3	:=	Meta+Shift+L
+editTrackDestinationSelectionTargetA4	:=	Meta+Shift+;
+editTrackDestinationSelectionTargetA5	:=	Meta+Shift+M
+editTrackDestinationSelectionTargetA6	:=	Meta+Shift+,
+editTrackDestinationSelectionTargetA7	:=	Meta+Shift+.
+editTrackDestinationSelectionTargetA8	:=	Meta+Shift+/
+# POMICANJE TRACK DESTINATION-A		
+editVideoMoveTrackDestinationUp	:=	Meta+Shift+[
+editVideoMoveTrackDestinationDown	:=	Meta+Shift+]
+editAudioMoveTrackDestinationUp	:=	Meta+Shift+'
+editAudioMoveTrackDestinationDown	:=	Meta+Shift+\
+# LOCKING VIDEO TRACKS:		
+editTrackLockToggleV1	:=	Meta+Shift+Numpad+1 | Meta+Shift+Ctrl+U
+editTrackLockToggleV2	:=	Meta+Shift+Numpad+2 | Meta+Shift+Ctrl+I
+editTrackLockToggleV3	:=	Meta+Shift+Numpad+3 | Meta+Shift+Ctrl+O
+editTrackLockToggleV4	:=	Meta+Shift+Numpad+4 | Meta+Shift+Ctrl+P
+editTrackLockToggleV5	:=	Meta+Shift+Numpad+5
+editTrackLockToggleV6	:=	Meta+Shift+Numpad+6
+editTrackLockToggleV7	:=	Meta+Shift+Numpad+7
+editTrackLockToggleV8	:=	Meta+Shift+Numpad+8
+editTrackLockToggleV	:=	Meta+Shift+Numpad+0 | Meta+Shift+Ctrl+N
+# LOCKING AUDIO TRACKS:		
+editTrackLockToggleA1	:=	Meta+Ctrl+Numpad+1 | Meta+Shift+Ctrl+J
+editTrackLockToggleA2	:=	Meta+Ctrl+Numpad+2 | Meta+Shift+Ctrl+K
+editTrackLockToggleA3	:=	Meta+Ctrl+Numpad+3 | Meta+Shift+Ctrl+L
+editTrackLockToggleA4	:=	Meta+Ctrl+Numpad+4 | Meta+Shift+Ctrl+;
+editTrackLockToggleA5	:=	Meta+Ctrl+Numpad+5 | Meta+Shift+Ctrl+M
+editTrackLockToggleA6	:=	Meta+Ctrl+Numpad+6 | Meta+Shift+Ctrl+,
+editTrackLockToggleA7	:=	Meta+Ctrl+Numpad+7 | Meta+Shift+Ctrl+.
+editTrackLockToggleA8	:=	Meta+Ctrl+Numpad+8 | Meta+Shift+Ctrl+/
+editTrackLockToggleA	:=	Meta+Ctrl+Numpad+0 | Meta+Shift+Ctrl+Space
+# AUTOSELECT VIDEO TRACKS (SYNCLOCKS):		
+editAutoSelectToggleVideo1	:=	Shift+Numpad+1 | Meta+Ctrl+U
+editAutoSelectToggleVideo2	:=	Shift+Numpad+2 | Meta+Ctrl+I
+editAutoSelectToggleVideo3	:=	Shift+Numpad+3 | Meta+Ctrl+O
+editAutoSelectToggleVideo4	:=	Shift+Numpad+4 | Meta+Ctrl+P
+editAutoSelectToggleVideo5	:=	Shift+Numpad+5
+editAutoSelectToggleVideo6	:=	Shift+Numpad+6
+editAutoSelectToggleVideo7	:=	Shift+Numpad+7
+editAutoSelectToggleVideo8	:=	Shift+Numpad+8
+editAutoSelectToggleVideoAll	:=	Shift+Numpad+0 | Meta+Ctrl+N
+# AUTOSELECT AUDIO TRACKS (SYNCLOCKS):		
+editAutoSelectToggleAudio1	:=	Ctrl+Numpad+1 | Meta+Ctrl+J
+editAutoSelectToggleAudio2	:=	Ctrl+Numpad+2 | Meta+Ctrl+K
+editAutoSelectToggleAudio3	:=	Ctrl+Numpad+3 | Meta+Ctrl+L
+editAutoSelectToggleAudio4	:=	Ctrl+Numpad+4 | Meta+Ctrl+;
+editAutoSelectToggleAudio5	:=	Ctrl+Numpad+5 | Meta+Ctrl+M
+editAutoSelectToggleAudio6	:=	Ctrl+Numpad+6 | Meta+Ctrl+,
+editAutoSelectToggleAudio7	:=	Ctrl+Numpad+7 | Meta+Ctrl+.
+editAutoSelectToggleAudio8	:=	Ctrl+Numpad+8 | Meta+Ctrl+/
+editAutoSelectToggleAudioAll	:=	Ctrl+Numpad+0 | Meta+Ctrl+Space
+editEnableDisableToggleVideoTrack1	:=	
+editEnableDisableToggleVideoTrack2	:=	
+editEnableDisableToggleVideoTrack3	:=	
+editEnableDisableToggleVideoTrack4	:=	
+editEnableDisableToggleVideoTrack5	:=	
+editEnableDisableToggleVideoTrack6	:=	
+editEnableDisableToggleVideoTrack7	:=	
+editEnableDisableToggleVideoTrack8	:=	
+editEnableDisableToggleVideoTrackAll	:=	
+editAddTransition	:=	
+editAddVideoTransition	:=	
+editAddAudioTransition	:=	
+editMatchFrame	:=	'
+timelineSourceViewerSwap	:=	
+EditTimeline.Context_clipAttributes	:=	Ctrl+Shift+H
+		
+# Clip		
+clipChangeClipSpeed	:=	
+clipRetimeControls	:=	
+clipChangeClipDuration	:=	Meta+D
+clipFreezeFrame	:=	
+clipResetRetime	:=	
+editClipEnabled	:=	Meta+N
+editLink	:=	Shift+Ctrl+,
+clipShowKeyframeEditor	:=	
+clipShowCurveEditor	:=	
+clipAudioIncreaseAudioLevel1dB	:=	Ctrl+Shift+I
+clipAudioDecreaseAudioLevel1dB	:=	Ctrl+Shift+K
+clipAudioIncreaseAudioLevel3dB	:=	Ctrl+Shift+U
+clipAudioDecreaseAudioLevel3dB	:=	Ctrl+Shift+J
+editMulticamCutToAngle1	:=	
+editMulticamCutToAngle2	:=	
+editMulticamCutToAngle3	:=	
+editMulticamCutToAngle4	:=	
+editMulticamCutToAngle5	:=	
+editMulticamCutToAngle6	:=	
+editMulticamCutToAngle7	:=	
+editMulticamCutToAngle8	:=	
+editMulticamCutToAngle9	:=	
+editMulticamSwitchToAngle1	:=	
+editMulticamSwitchToAngle2	:=	
+editMulticamSwitchToAngle3	:=	
+editMulticamSwitchToAngle4	:=	
+editMulticamSwitchToAngle5	:=	
+editMulticamSwitchToAngle6	:=	
+editMulticamSwitchToAngle7	:=	
+editMulticamSwitchToAngle8	:=	
+editMulticamSwitchToAngle9	:=	
+		
+# View		
+viewStillsStillGrab	:=	
+viewStillsStillPlay	:=	
+viewStillsStillNext	:=	
+viewStillsStillPrev	:=	
+viewStereoSwitchEyeCycle	:=	
+viewHighlightHighlight	:=	
+viewHighlightHighlightBW	:=	
+viewHighlightHighlightDiff	:=	
+viewBypassColorGrades	:=	
+viewReferenceWipeToggle	:=	
+viewReferenceWipeModeCycle	:=	
+viewReferenceWipeStyleCycle	:=	
+viewReferenceWipeInvert	:=	
+viewReferenceReposition	:=	
+viewTimelineWipeOneFrameReverse	:=	
+viewTimelineWipeOneFrameForward	:=	
+viewWindowOutlineCycle	:=	
+viewTimelineModeCycle	:=	
+viewTimelineModeRecord	:=	
+viewTimelineModeSource	:=	
+viewZoomActualSize	:=	
+viewZoomViewerToFit	:=	
+viewZoomSubZoomToFit	:=	Z
+viewZoomSubZoomIn	:=	C
+viewZoomSubZoomOut	:=	X
+viewZoomDefaultZoom	:=	
+viewSplitScreenModeOnOffToggle	:=	
+clipFindClipInMediaPool	:=	Shift+'
+viewViewerToggle	:=	
+viewViewerSourceModeToggle	:=	
+viewActiveWindowSelectionSourceViewer	:=	Shift+D
+viewActiveWindowSelectionTimelineViewer	:=	
+viewActiveWindowSelectionTimeline	:=	Shift+F
+viewActiveWindowSelectionMediaPoolFolders	:=	Meta+Shift+S
+viewActiveWindowSelectionMediaPoolClips	:=	Shift+S
+viewActiveWindowSelectionEffects	:=	
+viewActiveWindowSelectionEditIndex	:=	
+viewActiveWindowSelectionInspector	:=	Shift+G
+viewTogglePrimariesLogMode	:=	
+viewChannelsRGB	:=	
+#viewOpenCloseBins	:=	
+viewSafeAreaToggle	:=	
+viewShowViewerOverlay	:=	
+workspaceRemoteGrading	:=	
+workspacePrimaryWorkspaceMedia	:=	
+workspacePrimaryWorkspaceFirstCut	:=	
+workspacePrimaryWorkspaceEdit	:=	
+workspacePrimaryWorkspaceFusion	:=	
+workspacePrimaryWorkspaceColor	:=	
+workspacePrimaryWorkspaceAudio	:=	
+workspacePrimaryWorkspaceDeliver	:=	
+workspaceVideoScopesToggle	:=	
+workspaceViewerModeEnhancedViewer	:=	
+workspaceViewerModeFullViewer	:=	
+workspaceViewerModeCinemaViewer	:=	Meta+Shift+F
+workspaceLightboxView	:=	
+gangSourceTimelinePlayheads	:=	
+		
+# Mark		
+markIn	:=	E
+markOut	:=	R
+markVideoIn	:=	
+markVideoOut	:=	
+markAudioIn	:=	
+markAudioOut	:=	
+markConvertInOutToDurationMarker	:=	
+markConvertDurationMarkerToInOut	:=	
+markClip	:=	
+markSelected	:=	
+markResetIn	:=	Shift+E
+markResetOut	:=	Shift+R
+markResetInOut	:=	Shift+Q
+color.markResetIn	:=	
+color.markResetOut	:=	
+markVideoResetInOut	:=	
+markAudioResetInOut	:=	
+markKeyframeTimelineModeCycle	:=	
+markKeyframeMakeDynamic	:=	
+markKeyframeMakeStatic	:=	
+markKeyframeDelete	:=	
+markKeyframeDeleteAll	:=	
+markMoveSelectedKeyframesLeft	:=	
+markMoveSelectedKeyframesRight	:=	
+markMoveSelectedKeyframesUp	:=	
+markMoveSelectedKeyframesDown	:=	
+markMarkerAdd	:=	
+markMarkerModify	:=	
+markMarkerAddAndModify	:=	
+markMarkerSecondaryAdd	:=	
+markMarkerClear	:=	
+markFlagAdd	:=	
+markFlagClearAll	:=	
+markCreateSubClip	:=	
+		
+# Playback		
+controlPlayForward	:=	F
+controlPlayReverse	:=	S
+controlStop	:=	D
+controlFastForward	:=	
+controlFastReverse	:=	
+controlPlaySlow	:=	K+F
+controlPlayToggle	:=	
+controlLoop	:=	
+controlStepForward	:=	Right | L | Meta+Numpad+.
+controlStepReverse	:=	Left | K | Meta+Numpad+0
+controlLargeStepForward	:=	Shift+Right | ;
+controlLargeStepReverse	:=	Shift+Left | J
+controlPlayAgain	:=	
+#controlAudioStepForward	:=	
+#controlAudioStepReverse	:=	
+controlClipPrev	:=	A | Up
+controlClipNext	:=	G | Down
+controlJumpLeft	:=	
+controlJumpRight	:=	
+controlMarkersPrev	:=	Meta+A
+controlMarkersNext	:=	Meta+G
+controlTimecode	:=	Num+=
+controlTimecodeIncrement	:=	Num++
+controlTimecodeDecrement	:=	Num+-
+controlFirstFrame	:=	
+controlLastFrame	:=	
+controlKeyframePrev	:=	
+controlKeyframeNext	:=	
+controlGapPrev	:=	
+controlGapNext	:=	
+controlTimelineStart	:=	Home
+controlTimelineEnd	:=	End
+controlGotoIn	:=	W
+controlGotoOut	:=	T
+controlPlayAroundToPlayAroundCurrentSelection	:=	Ctrl+F
+controlPlayAroundToPlayAroundCurrentClip	:=	
+controlPlayAroundToPlayInToOut	:=	
+controlPlayAroundToPlayAroundIn	:=	
+controlPlayAroundToPlayAroundOut	:=	
+controlPlayAroundToPlayToIn	:=	
+controlPlayAroundToPlayToOut	:=	Meta+F
+		
+controlScannerPerfStepForward	:=	
+controlScannerPerfStepReverse	:=	
+controlScannerFramingMoveReverse	:=	
+controlScannerFramingMoveForward	:=	
+		
+sessionTrackForward	:=	
+sessionTrackReverse	:=	
+sessionTrackStop	:=	
+sessionTrackOneFrameForward	:=	
+sessionTrackOneFrameReverse	:=	
+controlRenderCacheCycle	:=	
+		
+# Color		
+sessionBaseMemory	:=	
+sessionBaseMemoryAll	:=	
+sessionBaseMemoryReset	:=	
+sessionPreviewMemory	:=	
+sessionOriginalMemory	:=	
+sessionGradeFromOneClipPrior	:=	
+sessionGradeFromTwoClipsPrior	:=	
+sessionVersionAdd:=		
+sessionVersionDefault:=		
+sessionVersionPrev	:=	
+sessionVersionNext	:=	
+sessionAutoColor	:=	
+sessionMemoriesLoadA	:=	
+sessionMemoriesLoadB	:=	
+sessionMemoriesLoadC	:=	
+sessionMemoriesLoadD	:=	
+sessionMemoriesLoadE	:=	
+sessionMemoriesLoadF	:=	
+sessionMemoriesLoadG	:=	
+sessionMemoriesLoadH	:=	
+sessionMemoriesSaveA	:=	
+sessionMemoriesSaveB	:=	
+sessionMemoriesSaveC	:=	
+sessionMemoriesSaveD	:=	
+sessionMemoriesSaveE	:=	
+sessionMemoriesSaveF	:=	
+sessionMemoriesSaveG	:=	
+sessionMemoriesSaveH	:=	
+sessionPrinterLightsEnable	:=	
+sessionPrinterLightsMasterPlus	:=	
+sessionPrinterLightsMasterMinus	:=	
+sessionPrinterLightsRedPlus	:=	
+sessionPrinterLightsRedMinus	:=	
+sessionPrinterLightsGreenPlus	:=	
+sessionPrinterLightsGreenMinus	:=	
+sessionPrinterLightsBluePlus	:=	
+sessionPrinterLightsBlueMinus	:=	
+sessionPrinterLightsCyanPlus	:=	
+sessionPrinterLightsCyanMinus	:=	
+sessionPrinterLightsMagPlus	:=	
+sessionPrinterLightsMagMinus	:=	
+sessionPrinterLightsYelPlus	:=	
+sessionPrinterLightsYelMinus	:=	
+sessionPrinterLightsMasterQuarterPlus	:=	
+sessionPrinterLightsMasterQuarterMinus	:=	
+sessionPrinterLightsRedQuarterPlus	:=	
+sessionPrinterLightsRedQuarterMinus	:=	
+sessionPrinterLightsGreenQuarterPlus	:=	
+sessionPrinterLightsGreenQuarterMinus	:=	
+sessionPrinterLightsBlueQuarterPlus	:=	
+sessionPrinterLightsBlueQuarterMinus	:=	
+sessionPrinterLightsCyanQuarterPlus	:=	
+sessionPrinterLightsCyanQuarterMinus	:=	
+sessionPrinterLightsMagQuarterPlus	:=	
+sessionPrinterLightsMagQuarterMinus	:=	
+sessionPrinterLightsYelQuarterPlus	:=	
+sessionPrinterLightsYelQuarterMinus	:=	
+sessionLiveGrade	:=	
+sessionLiveGradePause	:=	
+sessionGrabLiveGradeFrame	:=	
+		
+# Nodes		
+nodesPrevious	:=	
+nodesNext	:=	
+nodesAddSerial	:=	
+nodesAddBefore	:=	
+nodesAddParallel	:=	
+nodesAddLayer	:=	
+nodesAppend	:=	
+nodesAddOutside	:=	
+nodesAddSplitterCombiner	:=	
+nodesAddCPW	:=	
+nodesAddLPW	:=	
+nodesAddPPW	:=	
+nodesAddPCW	:=	
+nodesToggleCurrent	:=	
+nodesToggleAll	:=	
+nodesExtractCurrent	:=	
+#nodesDeleteCurrent	:=	
+		
+# Fairlight		
+FairlightTimeline.trimExtendEditSelectionToNextEdit	:=	
+FairlightTimeline.trimExtendEditSelectionToNextTrack	:=	
+FairlightTimeline.trimExtendEditSelectionToPreviousEdit	:=	
+FairlightTimeline.trimExtendEditSelectionToPreviousTrack	:=	
+FairlightTimeline.trimMoveEditSelectionToNextEdit	:=	
+FairlightTimeline.trimMoveEditSelectionToNextFrame	:=	
+FairlightTimeline.trimMoveEditSelectionToNextTrack	:=	
+FairlightTimeline.trimMoveEditSelectionToPreviousEdit	:=	
+FairlightTimeline.trimMoveEditSelectionToPreviousFrame	:=	
+FairlightTimeline.trimMoveEditSelectionToPreviousTrack	:=	
+FairlightTimeline.controlFirstFrame	:=	
+FairlightTimeline.controlLastFrame:=		
+FairlightTimeline.editAddTransition	:=	
+FairlightTimeline.trimTrimToSelection	:=	
+FairlightTimeline.trimCrossfadeSelection	:=	
+FairlightTimeline.viewTrackWaveformResetZoomAllTracks	:=	
+FairlightTimeline.viewTrackWaveformResetZoomSelectedTracks	:=	
+FairlightTimeline.editDuplicateSelection	:=	
+		
+# Help		
+helpManual	:=	
+		
+# Context Menu		
+# MediaPool		
+MediaPool.Context_setPosterFrame	:=	
+MediaPool.Context_clearPosterFrame	:=	
